@@ -1,0 +1,47 @@
+
+/*===================SECCIONES===================*/
+
+    #secSede2{
+        display: inline;
+    }
+    #secSede1{
+        display: none;
+    }
+    
+    #secContacto{
+        display: none;
+    }
+    #secConocenos{
+        display: none;
+    }
+    #secAccesibilidad{
+        display: none;
+    }
+    #secSede {
+        display: inline;
+    }
+    #secNoticias{
+        display: none;
+    }
+
+/*===================SEDE===================*/
+
+#registro{
+    display: none;
+}
+
+#tramites{
+    display: inline;
+}
+
+#personal{
+    display: none;
+}
+
+#documentos{
+    display: inline-block;
+}
+
+#catalogo{
+    display: none;
+}

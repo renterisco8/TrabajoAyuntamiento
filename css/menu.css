@@ -1,0 +1,175 @@
+#menu1{
+    width: 90%;
+    height: 3em;
+    color: white;
+    background-color: #968776;
+    padding: 0 5% 0 5%;
+}
+    .inicio{
+        float: left;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Thasadith', sans-serif;
+    }
+    #contraste{
+        float: right;
+    }
+    .iconos{
+        float: right;
+        width: 1em;
+        height: 1em;
+        margin: 1em .5em 0 .5em;
+    }
+    .imgIconos{
+        width: 1.5em;
+        height: 1.5em;
+    }
+#menu2Img{
+    width: 100%;
+    height: 6em;
+    background-image: url("../img/paisaje1.jpg");
+}
+.paisaje{
+    width: 100%;
+    height: 5em;
+}
+#menu2{
+    max-width: 2080px;
+    margin: 0 5%;
+    align-content: center;
+    color: white;
+}
+    #menu2Nav{
+        clear: both;
+        width: 100%;
+        /*border: 1px solid black;*/
+        padding: 1em 0;
+        background-color: rgb(150, 135, 118);
+    }
+    .navM{
+        margin: .9em;
+        padding: .9em;
+        color: white;
+    }
+    .navM:hover{
+        background-color: rgb(106, 89, 68);
+        transition: .3s ease;
+    }
+    .navM:not(hover){
+        background-color: rgb(150, 135, 118);
+        transition: .5s ease;
+    }
+
+/* DESPLEGABLE */
+
+#menu3Nav{
+    clear: both;
+    width: 100%;
+    height: 2em;
+    padding: 1em 0;
+    background-color: rgb(150, 135, 118);
+    display: none;
+}
+#divImgHamburquesa{
+    display:none;
+    float: right;
+    width: 2em;
+    height: 2em;
+    margin: 0 1em;
+}
+.imgHamburquesa{
+    width: 2em;
+    height: 2em;
+    opacity: 0.5;
+}
+.imgHamburquesa:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.imgHamburquesa:not(hover){
+    opacity: .5;
+    transition: 0.3s;
+}
+#imgHamburquesaB{
+    display: none;
+}
+.nav3M{
+    width: 10em;
+    clear: both;
+    float: right;
+    padding: .5em 0em;
+    color: white;
+    background-color: rgb(106, 89, 68);
+    z-index: 1;
+}
+#contenedorOpciones{
+    display: none;
+    clear: both;
+    float: right;
+    padding: 1em;
+    background-color: rgb(106, 89, 68);
+}
+
+
+    /*ICONOS*/
+
+    #botContrasteB{
+        display: none;
+    }
+    #botIdiomaB{
+        display: none;
+    }
+    #botFaQB{
+        display: none;
+    }
+    #botEsquemaB{
+        display: none;
+    }
+    #botOFFB{
+        display: none;
+    }
+     
+
+    /* PEGAJOSO*/
+
+    .fixed {
+        position:fixed;
+        z-index:1000;
+        top:0;
+        width:90%!important;
+        margin: 0 !important;
+        
+        /*max-width:1000px;
+        
+        box-shadow:0px 4px 3px rgba(0,0,0,.2);*/
+    }
+    
+    @media all and (max-width: 1024px) and (min-width:800px){
+        #menu1{height: 2em;}
+        .inicio{font-size: 2em;}
+        #menu2{margin: 0 4%;}
+        #menu2Img{height: 5em;}
+        .imgIconos{width: .9em;height:.9em;}
+    }
+    @media all and (max-width: 799px) and (min-width:400px){
+        #menu1{height: 1.5em;}
+        .inicio{font-size: 1.5em;}
+        #menu2{margin: 0 3%;}
+        #menu2Nav{display: none !important}
+
+        #menu2Img{height: 4em;}
+        #menu3Nav{display: block}
+        .iconos{display: none !important}
+        #divImgHamburquesa{display: block}
+    }
+    @media all and (max-width: 399px) {
+        #menu1{height: 1em;}
+        .inicio{font-size: 1.1em;}
+        #menu2{margin: 0 0;}
+        #menu2Nav{display: none !important}
+        #menu2Img{height: 3em;}
+        #menu3Nav{display: block}
+        .iconos{display: none !important}
+        #divImgHamburquesa{display: block}
+    }
